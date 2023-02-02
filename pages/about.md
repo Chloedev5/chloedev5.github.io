@@ -8,8 +8,12 @@ menu: A propos2...
 permalink: /about/
 ---
 
-Jeune femme de 21 ans, je suis passionnée par l'informatique, la domotique, les voitures et l'agriculture
+Jeune femme de 21 ans, je suis passionnée par l'informatique, la domotique, les voitures et l'agriculture.
+A travers ce blog, je souhaite vous partager ma passion et mes projets.
 
+
+
+<!--
 <ul>
 {% for website in site.data.social %}
 <li>{{website.sitename }}：<a href="{{ website.url }}" target="_blank">@{{ website.name }}</a></li>
@@ -21,9 +25,9 @@ Jeune femme de 21 ans, je suis passionnée par l'informatique, la domotique, les
 </li>
 {% endif %}
 </ul>
+-->
 
-
-## Skill Keywords
+<!--
 
 {% for skill in site.data.skills %}
 ### {{ skill.name }}
@@ -33,3 +37,4 @@ Jeune femme de 21 ans, je suis passionnée par l'informatique, la domotique, les
 {% endfor %}
 </div>
 {% endfor %}
+-->
