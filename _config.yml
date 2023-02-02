@@ -70,7 +70,7 @@ email: chloedev5@outlook.fr
 navs:
   -
     href: /
-    label: label1
+    label: Home
 
   -
     href: /categories/
@@ -99,7 +99,7 @@ navs:
 # ---------------- #
 #       RSS        #
 # ---------------- #
-subscribe_rss: /feed.xml
+#subscribe_rss: /feed.xml
 
 # ---------------- #
 #      Jekyll      #
