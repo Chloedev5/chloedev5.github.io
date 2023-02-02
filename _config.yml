@@ -2,18 +2,18 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://mazhuang.org
+url: https://chloedev5.github.io
 date_format: "ordinal"
-title: 码志
-subtitle: "公众号：闷骚的程序员"
-description: "马壮的个人博客，公众号：闷骚的程序员"
-keywords: 码志, Zhuang Ma, mzlogin, mazhuang, 闷骚的程序员
+title: Chloedev5
+subtitle: ""
+description: "Chloedev5's website"
+keywords: chloedev5
 timezone: Asia/Shanghai
 encoding: "utf-8"
 # 页面左下角显示的年份
 since: 2015
 # 源码仓库，请替换成自己的
-repository: mzlogin/mzlogin.github.io
+repository: chloedev5/chloedev5.github.io
 # 对 css 和 js 资源的 cdn 加速配置
 cdn:
     jsdelivr:
@@ -39,7 +39,7 @@ components:
     # 页面右上角，以及「关于」页面的二维码
     # 修改图片请替换 assets/images/qrcode.jpg
     qrcode:
-        enabled: true
+        enabled: false
         image_alt: 闷骚的程序员
     # 维基索引页使用哪种视图，支持 列表（list）/分类（cate）
     wiki:
@@ -58,8 +58,8 @@ highlight_theme: github
 #      Author      #
 # ---------------- #
 author: Zhuang Ma
-organization: 
-organization_url: 
+organization:
+organization_url:
 github_username: mzlogin
 location: Wuhan, China
 email: chumpma@gmail.com
@@ -139,7 +139,7 @@ comments_provider: giscus
 # !!!Important!!! Please modify infos below to yours
 # disqus 配置参考：https://disqus.com
 disqus:
-    username: 
+    username:
 # gitment 配置参考：https://imsun.net/posts/gitment-introduction/
 gitment:
     owner: mzlogin
@@ -184,7 +184,7 @@ google:
     analytics_id: UA-80669434-1
     adsense:
         footer: true
-        sidebar: true 
-        sidebar-detail: true 
+        sidebar: true
+        sidebar-detail: true
         content_header: false
         content_footer: false
