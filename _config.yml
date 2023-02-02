@@ -61,7 +61,7 @@ author: Chloé
 organization:
 organization_url:
 github_username: chloedev5
-location: Normandy, France
+location: Normandie, France
 email: chloedev5@outlook.fr
 
 # ---------------- #
@@ -70,7 +70,7 @@ email: chloedev5@outlook.fr
 navs:
   -
     href: /
-    label: Home
+    label: Accueil
 
   -
     href: /categories/
@@ -88,13 +88,13 @@ navs:
     href: /wiki/
     label: Wiki
 
-  -
-    href: /links/
-    label: Links
+#  -
+#    href: /links/
+#    label: Links
 
   -
     href: /about/
-    label: About
+    label: A propos...
 
 # ---------------- #
 #       RSS        #
