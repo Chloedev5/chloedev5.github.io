@@ -67,3 +67,55 @@ On va récupérer l'arrivée électrique utilisée par la prise de l'Arduino. On
 Voila, tout est branché. Voici un schéma récapitulatif et une photo de ce que ça donne chez moi.
 
 ### La partie logicielle
+Voici mon code, que vous pouvez adapter selon vos besoins
+
+«//Chloedev5
+//TempoLait Ver. 0.1
+//23-01-2023
+//
+//Sonde de temperature étanche DS18B20
+//relais 5V - 230V AC KY019
+
+//Connexion - cablage
+//Relais +5V / port de controle = numérique 10
+//Sonde de température = +3.3 - 5V / port information (jaune) ANALOG IN A1
+
+#include "OneWire.h"
+#include "DallasTemperature.h"
+
+OneWire oneWire(A1); //définition du port de la sonde
+DallasTemperature ds(&oneWire);
+
+int attente = 10; //temps d'attente entre 2 mesures en secondes
+int temp_high = 52; //température du lait maxi (en °C)
+int temp_low = 48; //temperature du lait mini (en °C)
+
+int delai = attente * 1000; //passage du temps d'attente en millisecondes
+
+void setup() {
+  Serial.begin(9600);  // définition de l'ouverture du port série
+  ds.begin();          // activation de la sonde
+  pinMode(10, OUTPUT); // définition du port de controle du relais (10) en sortie
+}
+
+void loop() {
+  ds.requestTemperatures(); //récupération de la température
+  int t = ds.getTempCByIndex(0); //Sauvegarde de la température dans la variable t
+
+  //affichage de la temperature dans la console
+  Serial.print(t);
+  Serial.println( "C");
+
+  // réglage du relais en fonction de la température relevée
+  if (t > temp_high) {
+    digitalWrite(10, HIGH);  //si la température est superieure a temp_high = coupure du relais
+  }
+  else {
+    if (t < temp_low) {
+      digitalWrite(10, LOW); //si la température est inferieure a temp_low = remise en route du relais
+    }
+  }
+
+  delay(delai); //pause de la valeur de la variable delai
+}
+»
