@@ -69,7 +69,8 @@ Voila, tout est branché. Voici un schéma récapitulatif et une photo de ce que
 ### La partie logicielle
 Voici mon code, que vous pouvez adapter selon vos besoins
 
-«//Chloedev5
+```cpp
+//Chloedev5
 //TempoLait Ver. 0.1
 //23-01-2023
 //
@@ -118,4 +119,4 @@ void loop() {
 
   delay(delai); //pause de la valeur de la variable delai
 }
-»
+```
