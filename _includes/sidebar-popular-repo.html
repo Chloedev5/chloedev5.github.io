@@ -4,7 +4,10 @@
 {% for repo in repos | limit: site.components.side_bar_repo.limit %}
 <a href="{{ repo.html_url }}" target="_blank" class="card text-center mobile-hidden">
     <div class="thumbnail">
+      <!-- original de la ligne 10
         <div class="card-image geopattern" data-pattern-id="{{ repo.name }}">
+      -->
+        <div class="card-image" data-pattern-id="{{ repo.name }}">
             <div class="card-image-cell">
                 <h3 class="card-title">
                     {{ repo.name }}
